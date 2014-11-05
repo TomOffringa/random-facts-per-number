@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Get facts for your favorite number</title>
+</head>
+
+<body ng-app="FactsPerYearApp" ng-controller="yearsController">
+    <div class="l-container">
+        <h1>Random facts for your favorite number</h1>
+    </div>
+
+    <div class="l-container">
+
+        <form name="form" ng-submit="processForm()">
+            <Label>Enter your favorite number</label>
+            <input type="number" ng-change="processForm()" name="favoriteYear" ng-model="formData.favoriteYear"/>
+        </form>
+
+    </div>
+
+  <div class="l-container">
+    <p>{{result}}</p>
+
+  </div>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="services.js"></script>
+  <script src="controllers.js"></script>
+</body>
+</html>
