@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "bower": "latest",
-    "http-server": "^0.6.1"
+    "http-server": "^0.6.1",
+    "express": "latest"
   }
 }
